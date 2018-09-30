@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). Check out the preview page [Here](https://crypdash.herokuapp.com/). 
+
+## Technology Stack:
+
+`React + highcharts + cryptocompare`
+
+Run `npm install` to install all the dependencies, and `npm start` to run the application.
+
+<hr/>
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
