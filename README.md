@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 2. Fuzzy search on the crypto coins.
 ![fuzzy search](https://raw.githubusercontent.com/ambitiousbird/cryptodash/master/img/search.png)
-3. Three grid options available on the highcharts.
+3. Data visualization using highcharts.
 ![dashboard](https://raw.githubusercontent.com/ambitiousbird/cryptodash/master/img/dashboard.png)
 
 ## How to start the applicatoin
