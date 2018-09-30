@@ -9,8 +9,7 @@ import { ConfirmButton } from './Button';
 import _ from 'lodash';
 import fuzzy from 'fuzzy';
 import moment from 'moment';
-
-const cc = require('cryptocompare');
+import Cryptocompare from "./Cryptocompare";
 
 const AppLayout = styled.div`
   padding: 40px;
@@ -62,7 +61,7 @@ class App extends Component {
     return validatedFavorites;
   };
   fetchCoins = async () => {
-    let coinList = (await cc.coinList()).Data;
+    let coinList = (await Cryptocompare.coinList()).Data;
     this.setState({ coinList, favorites: this.validateFavorites(coinList) });
   };
   fetchPrices = async () => {
@@ -90,7 +89,7 @@ class App extends Component {
     let promises = [];
     for (let units = TIME_UNITS; units > 0; units--) {
       promises.push(
-        cc.priceHistorical(
+        Cryptocompare.priceHistorical(
           this.state.currentFavorite,
           ['USD'],
           moment()
@@ -105,7 +104,7 @@ class App extends Component {
     let returnData = [];
     for (let i = 0; i < this.state.favorites.length; i++) {
       try {
-        let priceData = await cc.priceFull(this.state.favorites[i], 'USD');
+        let priceData = await Cryptocompare.priceFull(this.state.favorites[i], 'USD');
         returnData.push(priceData);
       } catch (e) {
         console.warn('Fetch price error: ', e);
