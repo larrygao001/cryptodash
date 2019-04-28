@@ -4,6 +4,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 `React + highcharts + cryptocompare`
 
+## Main features
+
+1. Customize what to be displayed in the dashboard. 
+![User favorites](https://raw.githubusercontent.com/ambitiousbird/cryptodash/master/img/favorite.png)
+
+2. Fuzzy search on the crypto coins.
+![fuzzy search](https://raw.githubusercontent.com/ambitiousbird/cryptodash/master/img/search.png)
+3. Data visualization using highcharts.
+![dashboard](https://raw.githubusercontent.com/ambitiousbird/cryptodash/master/img/dashboard.png)
+
+## How to start the applicatoin
+
 Run `npm install` to install all the dependencies, and `npm start` to run the application.
 
 <hr/>
